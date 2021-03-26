@@ -103,7 +103,7 @@ d3.json(earthquakeData).then(function(data) {
         style: styleInfo,
 
         // We create a popup for each circleMarker to display the magnitude and
-        //  location of the earthquake after the marker has been created and styled.
+        // location of the earthquake after the marker has been created and styled.
         onEachFeature: function(feature, layer) {
         layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
       }
